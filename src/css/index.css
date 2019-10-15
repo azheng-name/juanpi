@@ -1,0 +1,801 @@
+html, body, div,
+ h1, h2, h3, h4, 
+ h5, h6, hr, p, dl, dt, dd, 
+ ul, ol, li,form,legend, button, input,
+  textarea, th, td { 
+      margin: 0;
+    padding: 0;}
+    li{
+        list-style: none
+    }
+    a{
+        text-decoration: none
+    }
+    em{
+        font-style:normal
+    }
+    body{
+        font: 12px/1.5 "微软雅黑",Tahoma,
+        Helvetica,Arial,'宋体',sans-serif,\5b8b\4f53;
+        background:#f7f7f7
+    }
+    .banx,.banx-1{
+        width:1200px;
+        margin:0 auto;
+    }
+    #tool{
+        background:#f6f6f6;
+        height:30px;
+        line-height:30px;
+    }
+  #tool .banx .right-1{
+   
+        float: right;
+       
+ }
+   #tool .banx .right-1 .login, 
+   #tool .banx .right-1 .bag,
+   #tool .banx .right-1 .other,
+   #tool .banx .right-1 .other-show
+   {
+    
+        display:block;
+        float: left;
+        color: #e2e2e2;
+   }
+   #tool .right-1 div a {
+    margin-left: 15px;
+    color: #333;}
+    #tool #nav{
+        color:#ff464e
+    }
+    #tool .right-1 div a:hover  {
+        color:#ff464e
+    }
+    .icon{
+        /* background-position: 0 -156px; */
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin: 4px 7px 0 7px;
+    background: url(../img/icon-total.png) no-repeat 0 -156px;
+    }
+    .num{
+        background: none repeat scroll 0 0 #ff464e;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    font-family: "宋体";
+    height: 18px;
+    line-height: 18px;
+    margin: 3px 0 0 5px;
+    text-align: center;
+    width: 18px;}
+    .other-show{
+        position: relative;
+        display: block;
+    }
+    .other-show a{
+        padding-right:10px    }
+    .normal-box{
+        display: none;
+        position: absolute;
+        top: 24px;
+        left: 3px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 13;
+    }
+    .normal-box a{
+        display: block;
+    width: 48px;
+    margin-left: 12px!important;
+    text-align: center
+    }
+     .other-show:hover .normal-box {
+       display: block
+    }
+    .banx-1{
+        position: relative
+    }
+    .logo{
+        position: absolute;
+        top: 17px;
+    left: 0;
+    width: 210px;
+    height: 52px;
+    background: url(../img/header-total.gif) no-repeat -78px -52px;
+    }
+    .clear::after{
+        display: block;
+        clear:both;
+        content: ""
+    }
+    .clear{height:87px;
+    background:#fff}
+    .clear .pro{
+        background: url(../img/header-total.gif) no-repeat 0 0;
+        height: 33px;
+        width: 465px;
+        position:absolute;
+        top: 28px;
+        right: 290px;
+    }
+    
+    .clear .pro a{
+        display: block;
+    float: left;
+    height: 30px;
+    width: 98px;
+    margin: 0 0px 0 50px;
+    }
+    .clear .sear{
+        position: absolute;
+        top: 25px;
+        right: 0;
+        width: 237px;
+        height: 35px;
+    }
+    .clear .sear .sear-1{
+        float: left;
+        display: block;
+    width: 200px;
+    height: 35px;
+    background: #efefef;
+    }
+    .clear .sear .sear-1 .txt{
+    
+        border: 0 none;
+    outline: 0 none;
+    background: #efefef;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0 0 10px;
+    }
+    .clear .sear .smt{
+        outline: none;
+        float: right;
+        border: 0 none;
+    cursor: pointer;
+    height: 35px;
+    width: 37px;
+    display: block;
+    background: url(../img/header-total.gif) no-repeat right -65px;
+    }
+    .main ul li{
+      float:left;
+      height:38px;
+    }
+    .chanan{
+        background: #ff464e;
+        border-radius: 6px 6px 0 0;
+    }
+    .main ul .chanan a{
+        color:#fff
+    }
+    .main ul .chanan a:hover{
+        color:#fff
+    }
+    .main ul li a{
+        float: left;
+    cursor: pointer;
+    padding: 10px 24px 0;
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+    }
+  #phone{
+    background: url(../img/phone-new-20151119.png) no-repeat 0 0;
+   height:16px;
+   display: inline-block;
+  width:12px;
+  margin-bottom: -3px;
+  margin-right: 3px
+}
+.main ul li a:hover{
+    color:#ff464e
+}
+#li-1{
+    position: relative
+}
+.main .boxx .code{
+    background:url(../img/jp-app-90-new.png)no-repeat;
+    height:148px;
+    width:148px;}
+.boxx{
+    position: absolute;
+    left: -28px;
+    top: 40px;
+    background-color: #fff;
+    border:1px solid  #e2e2e2;
+    padding: 5px;
+    width: 148px;
+    height: 173px;
+    z-index: 100;
+    display: none;
+}
+#li-1:hover .boxx{
+    display: block
+}
+  
+
+.min{
+    height: 38px;
+    border-bottom: 2px solid #ff464e;
+     background:#fff
+}
+.main .boxx .code-txt{
+    text-align: center;
+    font-size: 14px;
+    color:#666
+
+}
+.banner .lond{
+    display: inline-block;
+    margin-right:10px
+}
+.banner .guang{
+    display: inline-block
+}
+  .banner .lond dl{
+    width: 190px;
+    height: 377px;
+    overflow: hidden;
+    padding: 2px 10px 1px;
+    background-color: #fff;
+   
+  } 
+  .banner .lond dl dd{
+    float: left;
+    width: 50%;
+    height: 54px;
+    overflow: hidden;
+    line-height: 53px;
+    text-align: center;
+  
+  }
+  .banner .lond dl dd a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    position: relative;
+    color:#5e5e5e
+  }
+  .banner .lond dl dd .ct-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    background: url(../img/ct_icons.png) no-repeat 0 0;
+    margin-right: 5px;
+  }
+  .banner .lond dl dd .ct-2{
+   background-position: -24px 0
+  }
+  .banner .lond dl dd .ct-3{
+    background-position: -48px 0
+   }
+   .banner .lond dl dd .ct-4{
+    background-position: -72px 0
+   }
+   .banner .lond dl dd .ct-5{
+    background-position: -96px 0
+   }
+   .banner .lond dl dd .ct-6{
+    background-position: -120px 0
+   }
+   .banner .lond dl dd .ct-7{
+    background-position: -144px 0
+   }
+   .banner .lond dl dd .ct-8{
+    background-position: -168px 0
+   }
+   .banner .lond dl dd .ct-9{
+    background-position: -192px 0
+   }
+   .banner .lond dl dd .ct-10{
+    background-position: -216px 0
+   }
+   .banner .lond dl dd .ct-11{
+    background-position: -240px 0
+   }
+   .banner .lond dl dd .ct-12{
+    background-position: -264px 0
+   }
+   .banner .lond dl dd .ct-13{
+    background-position: -288px 0
+   }
+   .banner .lond dl dd .ct-14{
+    background-position: -312px 0
+   }
+   .banner .lond dl dd:hover a{
+       color:#ff464e
+   }
+   .banner .lond dl dd:hover .ct-icon{
+      background-position: 0 -24px
+   }
+   .banner .lond dl dd:hover .ct-2{
+    background-position: -24px -24px
+ }
+ .banner .lond dl dd:hover .ct-3{
+    background-position: -48px -24px
+ }
+ .banner .lond dl dd:hover .ct-4{
+    background-position: -72px -24px
+ }
+ .banner .lond dl dd:hover .ct-5{
+    background-position: -96px -24px
+ }
+ .banner .lond dl dd:hover .ct-6{
+    background-position: -120px -24px
+ }
+ .banner .lond dl dd:hover .ct-7{
+    background-position: -144px -24px
+ }
+ .banner .lond dl dd:hover .ct-8{
+    background-position: -168px -24px
+ }
+ .banner .lond dl dd:hover .ct-9{
+    background-position: -192px -24px
+ }
+ .banner .lond dl dd:hover .ct-10{
+    background-position: -216px -24px
+ }
+ .banner .lond dl dd:hover .ct-11{
+    background-position: -240px -24px
+ }
+ .banner .lond dl dd:hover .ct-12{
+    background-position: -264px -24px
+ }
+ .banner .lond dl dd:hover .ct-13{
+    background-position: -288px -24px
+ }
+ .banner .lond dl dd:hover .ct-14{
+    background-position: -312px -24px
+ }
+ .banner .guang{
+     position: relative;  
+     width:700px;
+     height:360px; 
+ }
+ .banner .guang img{
+     position: absolute;
+     top:0;
+     left:0;
+     opacity: 0;
+     width: 100%;
+     cursor: pointer;
+     transition: opacity 1s;
+ }
+ .banner .guang .img-li{
+     opacity: 1;
+ }
+ .banner .guang .left{
+     font-size:40px;
+     position: absolute;
+     left:0;
+     top:147px;
+     color:#fff;
+     background:rgba(0, 0, 0,0.2);
+     height:50px;
+     line-height: 46px;
+     display: none
+ }
+ .banner .guang .left:hover,.banner .guang .right:hover{
+    background:rgba(0, 0, 0,0.4);
+ }
+ .banner .guang .right{
+    font-size:40px;
+    position: absolute;
+    right:0;
+    top:147px;
+    color:#fff;
+    background:rgba(0, 0, 0,0.2);
+     height:50px;
+     line-height: 46px;
+     display: none
+}
+ .banner .guang ul li a img{
+     height:360px;
+    display:block;
+    margin:0 auto;
+    
+    
+ }
+ .banner{
+    background: #f7f7f7;
+    position:relative
+ }
+ .banner .guang .bouds{
+    position: absolute;
+    bottom:20px;
+     left:322px;
+ }
+ .banner .guang .bouds li{
+      /* float:left; */
+      display: inline-block;
+       width:10px;
+     height:10px;
+     background:#fff;
+     border-radius: 50%;
+     text-indent: 9999px;
+     overflow: hidden;
+     margin-right:7px;
+    vertical-align: middle;
+    cursor: pointer
+     
+ }
+ .banner .guang .bouds .li11{
+     background:transparent;
+     border:3px solid #fff
+ }
+.banner .banan-r{
+    display: inline-block
+}
+.banner .banan-r dl{
+    width: 249px;
+    height: 360px;
+    overflow: hidden;
+    background-color:#e2e2e2;
+    margin-left:10px;
+}
+.banner .banan-r dl dd:hover{
+    opacity: 0.8;
+}
+.banner .banan-r dl dd{
+    float:left;
+    margin:0 1px 1px 0;
+   font-size:0;
+}
+.banner .banan-r dl .dd-1,
+.banner .banan-r dl .dd-4{
+    margin-right:0
+}
+
+.banner .tupian{
+    position:absolute;
+    top:0;
+    right:92px
+}
+.users{
+    margin-top:30px;
+    line-height:60px;
+    background:#f7f7f7;
+    
+}
+.time{ padding:9px 16px;
+    background:#fff;
+    box-sizing: border-box;
+    width:1186px;
+   
+}
+.users .today,.new-users .today{
+    font-size:20px;
+    color:#333;
+    font-weight: bold;
+    display: inline-block
+}
+.users .today span,.new-users .today span{
+    font-size: 16px;
+    color: #bbb;
+    margin-left:10px;
+    margin-right:10px;
+    font-weight: normal
+}
+.users .fele,.new-users .fele{
+    float:right;
+    margin-right:7px;
+}
+.users .fele span{
+    color: #ff464e;
+    font-size:14px
+}
+.users .fele i{
+    background:url(../img/icon_arrow-new.png) no-repeat left center;
+    width: 9px;
+    height: 10px;
+    display: inline-block;
+     margin-left: 4px;
+    
+}
+.brand{
+    background:#fff;
+    width:1186px;
+    overflow: hidden;
+    height:auto
+}
+.brand ul li{
+    float:left;
+    width: 278px;
+    display: inline-block;
+    margin:0 8px;
+  
+    
+}
+.brand ul li .brand-pic{
+    height: 130px;
+    width: 278px;
+    overflow:hidden
+}
+.brand ul li img{width:278px;
+height:130px;
+display: block;}
+.brand ul li .card{
+    height: 40px;
+    line-height:40px;
+    background-color: #fafafa
+}
+.brand ul::after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.brand ul li .card .title{
+  color:#333
+}
+.brand ul li .card .disc{
+    float:right;
+    width: 68px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #ff464e;
+     font-size: 14px;
+    margin: 6px 10px 0 0
+}
+.brand ul li:hover .disc{
+ background:#ff464e;
+ color:#fff;
+ border-radius: 2px
+}
+.brand .pinp{
+    margin:20px 0
+}
+.brand .pinp .pinp-1{
+    margin-left:16px;
+}
+.brand .pinp li{
+    text-align: center;
+    font-size:14px;
+    line-height: 35px;
+    height: 35px;
+    width: 98px;
+    float: left;
+    margin: 0 10px;
+     color:#666666
+}
+.brand .pinp li img{
+    height:35px;
+    width:70px
+}
+.new-users{
+    margin-top: 30px;
+}
+.new-users .fele span{
+    line-height:33px;
+    margin-right:1px;
+    color:#666666
+}
+.new-users .time-ej{
+    background:#fff;
+    width:1186px;
+}
+.new-users .time-ej li img{
+    width:220px;
+    height:220px;
+    padding-left:8px;
+    box-sizing: border-box;
+}
+.new-users .time-ej li .douse-sp{
+    color:#ff464e;
+    font-size:18px;
+    font-family: Arial;
+}
+.new-users .time-ej li .douse-sp-2{
+    color: #bbb;
+    text-decoration: line-through;
+    font-size: 14px
+}
+.new-users .time-ej ul{
+    padding-left:14px
+}
+.new-users .time-ej ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.new-users .time-ej ul li{
+    position: relative;
+    width: 228px;
+    background: #FFF;
+    float: left;
+    margin: 0 6px 12px 0;
+    height: 290px;
+    box-sizing: border-box;
+    padding-top: 6px;
+    border: 1px solid transparent;
+   
+}
+.new-users .time-ej li .douse{
+    padding-left: 5px;
+    width: 220px;
+    height: 32px;
+    line-height: 36px;
+    position: relative;
+   
+    background: #fff;
+    z-index: 10;
+    box-sizing: border-box;    
+}
+.new-users .time-ej li h3 a{
+   
+    color: #333;
+    letter-spacing: 1px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size:12px;
+}
+.new-users .time-ej li h3{
+    display: inline-block;
+    width: 220px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 0 10px 0 9px;
+    position: relative;
+    font-weight: normal;
+    color: #333;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    letter-spacing: 0
+}
+.new-users .time-ej li h3 span{
+    display: block;
+    color: #bbb;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    background: #fff;
+    height: 18px;
+    text-align: right;
+    font-size:12px;
+}
+#xin{
+    display: none;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #f4f4f4;
+    background: #f4f4f4;
+    border-radius: 15px;
+    position: absolute;
+    top: 18px;
+    right: 28px;
+    cursor: pointer;
+    z-index: 15;
+}
+#xin i{
+    background:url(../img/my-like.png) no-repeat 0px 0px;
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -7px;
+}
+.new-users .time-ej li:hover{
+    border:1px solid #bbbbbb
+}
+.new-users .time-ej li:hover #xin{
+display: block;}
+#xin:hover{
+    opacity: 0.6;
+}
+/* 尾部 */
+.foot{
+    border-top: 8px solid #ff464e;
+    margin-top:40px
+}
+/* 尾部图片 */
+.foot-1{
+  
+  
+    height:350px;
+    
+}
+.foot-1 img{
+ 
+    height:350px;
+}
+/* 楼梯 */
+.uu {
+    width: 36px;
+    height: 327px;
+    position: fixed;
+    color: #fff;
+    right: 41px;
+    top: 191px;
+    background-color: #444;
+    display: none;
+}
+
+.uu .li-1{
+    background:brown;
+    display: block;
+
+}
+.uu ul li:hover{
+    background:brown;
+    display: block;
+}
+
+.uu ul li {
+    border: 1px solid  red;
+    width: 36px;
+    height: 82px;
+    color: #fff;
+    font-size:12px;
+    text-align: center;
+   padding-top:20px;
+   box-sizing: border-box;
+   line-height:20px;
+   cursor: pointer;
+}
+.uu .top{
+    background:#2e2727;
+}
+/* 顶部悬浮 */
+.lin{
+    position:fixed;
+    top:-50px;
+    left:0;
+    width:100%;
+    box-shadow: 0px 0px 4px #999;
+    background:#fff;
+    /* display: inline-block; */
+    padding: 15px 0
+}
+.lin .line li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px;
+    
+    
+}
+.lin .line li a{
+    font-size:14px;
+    color:#333
+}
+.lin .line::after{
+    display: block;
+    content:"";
+    clear: both;
+}
+.lin .line li .active{
+    color:#ff464e
+}
+.lin .line li .tt{
+    color:#336600
+}
+.lin .line .fir{
+    border-right: 1px solid #ccc;
+    padding-left: 0;
+}
+.lin .line li:hover a{
+    color:#ff464e
+}
+.lin .line li .tt:hover{
+color:#336600
+}
